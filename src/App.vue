@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <a href='http://localhost:8888'>
+    <button>Login With Spotify</button>
+    </a> -->
+    <router-view />
   </div>
 </template>
 
@@ -14,6 +17,8 @@ export default {
     HelloWorld
   }
 }
+
+
 </script>
 
 <style>
