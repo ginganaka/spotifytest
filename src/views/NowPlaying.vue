@@ -2,32 +2,68 @@
   <div class="nowplaying">
     <h1>NowPlaying</h1>
     <button @click="spotifyLogin">認証</button>
-    <br>
     <button @click="getNowPlaying">再生中の曲情報取得</button>
-    <div v-if="nowPlaying != null">
-        <p>今再生中の曲 : {{ nowPlaying.item.artists[0].name }} の {{ nowPlaying.item.name }}</p>
-        <img :src="nowPlaying.item.album.images[1].url">
+
+    <div class="switch">
+        <select v-model="selected">
+        <option>AppleMusic</option>
+        <option>Spotify</option>
+        </select>
+    </div>
+
+
+    <div class="form-inline my-2 my-lg-0">
+      <div v-if="nowPlaying != null">
+          <p>
+          artist<input type="text" v-model="nowPlaying.item.artists[0].name">
+          </p>
+          <p>
+          song<input type="text" v-model="nowPlaying.item.name">
+          </p>
+          <p>
+          album<input type="text" v-model="nowPlaying.item.album.name">
+          </p>
+          <br>
+          <button>Discography</button>
+          <button>Producer</button>
+          <button>Guitar</button> <br>
+          <button>Bass</button>
+          <button>Keyboard</button>
+          <button>Drums</button><br><br>
+          <input type="text" placeholder="その他のキーワード">
+
+          <!-- 追加 -->
+
+          <button type="button" @click="linkToOtherWindow('http://google.com')">Search</button>
+        </div>
       </div>
     </div>
   </template>
 
 <script>
   import axios from 'axios'
+
   export default {
     data: function() {
       return {
         nowPlaying: null
       }
     },
+
     props: {
       routeParams: Object
     },
+
     created: function() {
       if (this.$route.hash) {
         this.$router.push(this.$route.fullPath.replace('#','?'))
       }
     },
+
     methods: {
+      linkToOtherWindow (url) {
+      window.open(url, '')
+    },
       spotifyLogin: function() {
         let endpoint = 'https://accounts.spotify.com/authorize'
         let response_type = 'token'
@@ -56,7 +92,11 @@
        .catch(err => {
          console.error(err)
        })
-    }
+    },
+
   }
+
 }
+
+
 </script>

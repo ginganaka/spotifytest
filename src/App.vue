@@ -19,6 +19,8 @@ export default {
 }
 
 
+
+
 </script>
 
 <style>
@@ -29,5 +31,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.switch {
+  white-space: nowrap;
 }
 </style>
