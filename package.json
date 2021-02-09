@@ -39,6 +39,10 @@
     },
     "rules": {}
   },
+  "engines": {
+    "node": "15.5.0",
+    "npm": "7.3.0"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
