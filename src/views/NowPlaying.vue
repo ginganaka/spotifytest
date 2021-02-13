@@ -32,11 +32,11 @@
         </p>
           <p class="song">
           <img src="img/song.png">
-          <input class="song" type="search" v-model="nowPlaying.item.name">
+          <input class="song" type="search" v-model="nowPlaying.item.album.name">
           </p>
           <p class="album">
           <img src="img/album.png">
-          <input class="album" type="search" v-model="nowPlaying.item.album.name">
+          <input class="album" type="search" v-model="nowPlaying.item.name">
           </p>
 
         <div class="ain">
