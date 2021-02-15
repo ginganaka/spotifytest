@@ -81,7 +81,7 @@
           <br>
 
           <div class="searchdiv">
-          <input class="bar" type="search" v-model="add" placeholder="その他のキーワード">
+          <input class="bar" type="text" v-model="add" placeholder="その他のキーワード">
           <div class="search">
           <button type="button" @click="linkToOtherWindow(`http://google.com/search?q=${ nowPlaying.item.artists[0].name + ' ' + nowPlaying.item.name + ' ' + nowPlaying.item.album.name + ' ' + add  }`)" class="search"><input type="image" src="img/search.png"></button>
           </div>
