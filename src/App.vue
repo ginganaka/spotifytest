@@ -226,7 +226,7 @@ button input{
 .searchdiv input {
   width: 225px;
   height: 40px;
-  border-radius: 0px;
+  border-radius: 10px !important;
   margin-right: 6px;
 }
 
