@@ -77,10 +77,12 @@ height:960px;
   border: none;
   outline: none;
   margin-right: 10px;
+
 }
 .login button img {
   width:65px;
   height:20px;
+  text-align: left;
 }
 .gets {
   display: inline-block;
@@ -94,7 +96,8 @@ height:960px;
   width:67px;
   height:19px;
   display: inline-block;
-  margin-right: 43px;
+  margin-right: 10px;
+  text-align: left;
 
 }
 /* .gets {

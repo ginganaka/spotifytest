@@ -16,7 +16,8 @@
 
       <div id="language">
         <input type="radio" v-model="radioValue" value="1" id="jap">
-        <label for="jap">JAP/</label>
+        <label for="jap">JAP</label>
+        <nobr>/</nobr>
         <input type="radio" v-model="radioValue" value="2" id="eng">
         <label for="eng">EN</label>
       </div>
