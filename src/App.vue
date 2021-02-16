@@ -58,7 +58,7 @@ height:960px;
   font-size: 15px;
   color:#fff;
   position: absolute;
-  margin-left: 17vw;
+  margin-left: 70px;
   top:26px;
   font-style: HelveticaNeue;
 }
@@ -76,7 +76,7 @@ height:960px;
   background: transparent;
   border: none;
   outline: none;
-  margin-right: 10px;
+  margin-right: 5px;
 
 }
 .login button img {
