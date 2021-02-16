@@ -58,7 +58,7 @@ height:960px;
   font-size: 15px;
   color:#fff;
   position: absolute;
-  margin-left: 43px;
+  margin-left: 5vw;
   top:26px;
   font-style: HelveticaNeue;
 }
