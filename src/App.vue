@@ -58,7 +58,7 @@ height:960px;
   font-size: 15px;
   color:#fff;
   position: absolute;
-  margin-left: 5vw;
+  margin-left: 17vw;
   top:26px;
   font-style: HelveticaNeue;
 }
@@ -82,7 +82,6 @@ height:960px;
 .login button img {
   width:65px;
   height:20px;
-  text-align: left;
 }
 .gets {
   display: inline-block;
@@ -97,8 +96,6 @@ height:960px;
   height:19px;
   display: inline-block;
   margin-right: 10px;
-  text-align: left;
-
 }
 /* .gets {
   display: inline-block;
