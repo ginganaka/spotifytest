@@ -278,13 +278,17 @@ button input{
 }
 .searchdiv{
   display: inline-block;
+}
+
+.sea {
   position: relative;
+  display: inline-block;
 }
 
 .searchdiv .clearButton{
   position: absolute;
   display: inline-block;
-  right:95px;
+  right:15px;
   top:7px;
   font-size: 23px;
   color:grey;
