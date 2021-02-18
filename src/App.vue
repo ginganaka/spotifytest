@@ -56,7 +56,7 @@ height:960px;
 #language {
   display: inline-block;
   font-size: 15px;
-  color:#fff;
+  color:#cccccc;
   position: absolute;
   margin-left: 70px;
   top:26px;
@@ -106,6 +106,24 @@ height:960px;
   height: 150px;
 } */
 
+.artist {
+  margin-top: 7px;
+  margin-bottom:7px;
+}
+.ar {
+  width:250px;
+  display: inline-block;
+  position: relative;
+}
+.artist .clearButton{
+  position: absolute;
+  display: inline-block;
+  right:15px;
+  top:7px;
+  font-size: 23px;
+  color:grey;
+}
+
 .artist img{
   height:40px;
   width:40px;
@@ -117,6 +135,28 @@ height:960px;
   height: 43px;
   border-radius: 25px 25px;
   border-width: thin;
+}
+
+
+.song {
+  margin-top: 7px;
+  margin-bottom:4px;
+}
+
+
+.so {
+  width:250px;
+  display: inline-block;
+  position: relative;
+}
+
+.song .clearButton{
+  position: absolute;
+  display: inline-block;
+  right:15px;
+  top:15px;
+  font-size: 23px;
+  color:grey;
 }
 
 .song img{
@@ -132,6 +172,26 @@ height:960px;
   border-width: thin;
 }
 
+
+.album {
+  margin-top: 7px;
+  margin-bottom:7px;
+}
+
+.al {
+  width:250px;
+  display: inline-block;
+  position: relative;
+}
+
+.al .clearButton{
+  position: absolute;
+  display: inline-block;
+  right:15px;
+  top:15px;
+  font-size: 23px;
+  color:grey;
+}
 .album img{
   height:40px;
   width:40px;
@@ -140,10 +200,13 @@ height:960px;
 }
 .album input{
   width:245px;
-  height: 43px;
+  height: 40px;
   border-radius: 25px 25px;
   border-width: thin;
 }
+
+
+
 
 .type{
   border: none;
@@ -215,6 +278,16 @@ button input{
 }
 .searchdiv{
   display: inline-block;
+  position: relative;
+}
+
+.searchdiv .clearButton{
+  position: absolute;
+  display: inline-block;
+  right:95px;
+  top:7px;
+  font-size: 23px;
+  color:grey;
 }
 .search{
   border: none;

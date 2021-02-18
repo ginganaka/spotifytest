@@ -2,9 +2,6 @@
 
 <template>
   <div class="nowplaying">
-
-
-
     <div class="head">
 
       <div class="login">
@@ -27,18 +24,34 @@
     <div class="form-inline my-2 my-lg-0">
       <div v-if="nowPlaying != null">
         <div id="test">
-          <p class="artist">
-          <img src="img/musician.png">
-          <input type="search" v-model="nowPlaying.item.artists[0].name">
-        </p>
-          <p class="song">
+
+
+
+
+          <div class="artist" name="searchForm">
+
+            <img src="img/musician.png">
+          <div class="ar">
+          <input type="text" name="searchBox" v-model="nowPlaying.item.artists[0].name">
+          <div class="clearButton" v-on:click="ClearButton_Click1">×</div>
+        </div>
+        </div>
+
+          <div class="song">
           <img src="img/song.png">
-          <input class="song" type="search" v-model="nowPlaying.item.album.name">
-          </p>
-          <p class="album">
+          <div class="so">
+          <input class="song" type="text" v-model="nowPlaying.item.album.name">
+          <div class="clearButton" v-on:click="ClearButton_Click2">×</div>
+        </div>
+        </div>
+
+          <div class="album">
           <img src="img/album.png">
-          <input class="album" type="search" v-model="nowPlaying.item.name">
-          </p>
+          <div class="al">
+          <input class="album" type="text" v-model="nowPlaying.item.name">
+          <div class="clearButton" v-on:click="ClearButton_Click3">×</div>
+        </div>
+        </div>
 
         <div class="ain">
             <div v-bind:class="disco1">
@@ -83,6 +96,7 @@
 
           <div class="searchdiv">
           <input class="bar" type="text" v-model="add" placeholder="その他のキーワード">
+          <div class="clearButton" v-on:click="ClearButton_Click4">×</div>
           <div class="search">
           <button type="button" @click="linkToOtherWindow(`http://google.com/search?q=${ nowPlaying.item.artists[0].name + ' ' + nowPlaying.item.name + ' ' + nowPlaying.item.album.name + ' ' + add  }`)" class="search"><input type="image" src="img/search.png"></button>
           </div>
@@ -114,6 +128,7 @@ console.log(number);
               name:''}]
           }},
         selected: '',
+        text1: '',
         add: '',
         count1:'Discography',
         count2:'Producer',
@@ -156,6 +171,18 @@ console.log(number);
     methods: {
       linkToOtherWindow (url) {
       window.open(url, '')
+    },
+    ClearButton_Click1: function(){
+      this.nowPlaying.item.artists[0].name="";
+    },
+    ClearButton_Click2: function (){
+      this.nowPlaying.item.album.name="";
+    },
+    ClearButton_Click3: function(){
+      this.nowPlaying.item.name="";
+    },
+    ClearButton_Click4: function(){
+      this.add="";
     },
     Disco: function (){
     if(this.radioValue == 2)
@@ -368,7 +395,8 @@ console.log(number);
         let endpoint = 'https://accounts.spotify.com/authorize'
         let response_type = 'token'
         let client_id = '2a05be441be3404292be9f7d8a2d0d8e'
-        let redirect_uri = 'https://discovertest202129.herokuapp.com/'
+        let redirect_uri = 'http://localhost:8080'
+        // let redirect_uri = 'https://discovertest202129.herokuapp.com/'
         let scope = 'user-read-currently-playing'
         location.href = endpoint +
           '?response_type=' + response_type +
