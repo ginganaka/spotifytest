@@ -135,6 +135,7 @@ height:960px;
   height: 43px;
   border-radius: 25px 25px;
   border-width: thin;
+  font-size: 16px;
 }
 
 
@@ -170,6 +171,7 @@ height:960px;
   height: 43px;
   border-radius: 25px 25px;
   border-width: thin;
+  font-size: 16.0px;
 }
 
 
@@ -203,6 +205,7 @@ height:960px;
   height: 40px;
   border-radius: 25px 25px;
   border-width: thin;
+  font-size: 16.0px;
 }
 
 
@@ -305,12 +308,14 @@ button input{
   height: 40px;
   border-radius: 10px !important;
   margin-right: 6px;
+  font-size: 16.1px;
 }
 
 .search button input {
   height:40px;
   width:54px;
   margin-left: 5px;
+
 }
 /* .source {
   font-size: 12px;
