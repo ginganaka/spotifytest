@@ -135,9 +135,11 @@ height:960px;
   height: 43px;
   border-radius: 25px 25px;
   border-width: thin;
-  font-size: 16px;
 }
 
+/* input[type="text"]{
+  transform: scale(0.7);
+} */
 
 .song {
   margin-top: 7px;
@@ -171,7 +173,6 @@ height:960px;
   height: 43px;
   border-radius: 25px 25px;
   border-width: thin;
-  font-size: 16.0px;
 }
 
 
@@ -205,7 +206,6 @@ height:960px;
   height: 40px;
   border-radius: 25px 25px;
   border-width: thin;
-  font-size: 16.0px;
 }
 
 
@@ -308,7 +308,6 @@ button input{
   height: 40px;
   border-radius: 10px !important;
   margin-right: 6px;
-  font-size: 16.1px;
 }
 
 .search button input {
