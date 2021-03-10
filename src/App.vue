@@ -32,7 +32,7 @@ export default {
 body {
 background: linear-gradient(#4f4f4f, #000000);
 background-repeat:no-repeat;
-height:600px;
+height:650px;
 }
 
 
