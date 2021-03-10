@@ -399,8 +399,8 @@ console.log(number);
         let endpoint = 'https://accounts.spotify.com/authorize'
         let response_type = 'token'
         let client_id = '2a05be441be3404292be9f7d8a2d0d8e'
-        let redirect_uri = 'http://localhost:8080'
-        // let redirect_uri = 'https://discovertest202129.herokuapp.com/'
+        // let redirect_uri = 'http://localhost:8080'
+        let redirect_uri = 'https://discovertest202129.herokuapp.com/'
         let scope = 'user-read-currently-playing'
         location.href = endpoint +
           '?response_type=' + response_type +
