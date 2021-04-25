@@ -223,6 +223,15 @@ height:650px;
   font-weight: bold;
 }
 
+.web1 {
+  display: inline-block;
+  margin-right: 12px;
+}
+.web2 {
+  display: inline-block;
+  color: #1db954;
+  margin-right: 12px;
+}
 .disco1 {
   display: inline-block;
   margin-right: 12px;
@@ -232,45 +241,36 @@ height:650px;
   color: #1db954;
   margin-right: 12px;
 }
-.prod1 {
-  display: inline-block;
-  margin-right: 12px;
-}
-.prod2 {
-  display: inline-block;
-  color: #1db954;
-  margin-right: 12px;
-}
-.guitar1 {
+.blog1 {
   display: inline-block;
 }
-.guitar2 {
+.blog2 {
   display: inline-block;
   color: #1db954;
 }
 
-.bass1 {
+.wiki1 {
   display: inline-block;
   margin-right: 12px;
 }
-.bass2 {
+.wiki2 {
   display: inline-block;
   color: #1db954;
   margin-right: 12px;
 }
-.key1 {
+.face1 {
   display: inline-block;
   margin-right: 12px;
 }
-.key2 {
+.face2 {
   display: inline-block;
   color: #1db954;
   margin-right: 12px;
 }
-.drum1 {
+.twitter1 {
   display: inline-block;
 }
-.drum2 {
+.twitter2 {
   display: inline-block;
   color: #1db954;
 }

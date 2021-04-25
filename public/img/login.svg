@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.804" height="18.526" viewBox="0 0 61.804 18.526">
+    <defs>
+        <style>
+            .cls-2{fill:#1db954;stroke:#1db954;stroke-width:.4px}
+        </style>
+    </defs>
+    <g id="グループ_41" transform="translate(-17.492 -117.174)">
+        <text id="Login" fill="#1db954" font-family="HelveticaNeue, Helvetica Neue" font-size="14px" transform="translate(44.297 131.437)">
+            <tspan x="0" y="0">Login</tspan>
+        </text>
+        <g id="グループ_39" transform="translate(17.692 106.723)">
+            <path id="パス_51" d="M12.565 230.258H.618a.618.618 0 1 1 0-1.236h11.947a.618.618 0 1 1 0 1.236z" class="cls-2" transform="translate(0 -209.926)"/>
+            <path id="パス_52" d="M224.317 151.6a.618.618 0 0 1-.437-1.055l2.859-2.859-2.859-2.859a.618.618 0 1 1 .874-.874l3.3 3.3a.618.618 0 0 1 0 .874l-3.3 3.3a.613.613 0 0 1-.437.173z" class="cls-2" transform="translate(-215.048 -127.967)"/>
+            <path id="パス_53" d="M44.9 28.777a9.016 9.016 0 0 1-8.435-5.748.618.618 0 1 1 1.15-.451 7.827 7.827 0 1 0 0-5.728.618.618 0 1 1-1.15-.451A9.063 9.063 0 1 1 44.9 28.777z" class="cls-2" transform="translate(-35.014)"/>
+        </g>
+    </g>
+</svg>

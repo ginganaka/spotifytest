@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69.132" height="18.063" viewBox="0 0 69.132 18.063">
+    <g>
+        <text fill="#1db954" font-family="HelveticaNeue, Helvetica Neue" font-size="14px" transform="translate(-109.165 -117.374) translate(133.297 131.437)">
+            <tspan x="0" y="0">Reload</tspan>
+        </text>
+        <g>
+            <path fill="#1db954" d="M41.145 32.09a.934.934 0 0 0-.933.935 7.14 7.14 0 1 1-1.731-4.672h-2.63a.934.934 0 1 0 0 1.868h4.36a.934.934 0 0 0 .934-.934v-4.36a.934.934 0 1 0-1.868 0v1.556a9.031 9.031 0 1 0-11.408 13.939 8.964 8.964 0 0 0 5.16 1.635 9.147 9.147 0 0 0 1.587-.14 9.032 9.032 0 0 0 7.463-8.894.934.934 0 0 0-.934-.933z" transform="translate(-109.165 -117.374) translate(85.147 93.38)"/>
+        </g>
+    </g>
+</svg>

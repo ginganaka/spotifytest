@@ -8,10 +8,10 @@
     <div class="head">
 
       <div class="login">
-        <button @click="spotifyLogin"><img src="img/login.png"></button>
+        <button @click="spotifyLogin"><img src="img/login.svg"></button>
       </div>
       <div class="gets">
-        <button @click="getNowPlaying"><img src="img/reload.png"></button>
+        <button @click="getNowPlaying"><img src="img/reload.svg"></button>
       </div>
 
       <div id="language">
@@ -33,7 +33,7 @@
 
           <div class="artist" name="searchForm">
 
-            <img src="img/musician.png">
+            <img src="img/musician.svg">
           <div class="ar">
           <input type="text" name="searchBox" v-model="nowPlaying.item.artists[0].name">
           <div class="clearButton" v-on:click="ClearButton_Click1">×</div>
@@ -41,7 +41,7 @@
         </div>
 
           <div class="song">
-          <img src="img/song.png">
+          <img src="img/song.svg">
           <div class="so">
           <input class="song" type="text" v-model="nowPlaying.item.album.name">
           <div class="clearButton" v-on:click="ClearButton_Click2">×</div>
@@ -49,7 +49,7 @@
         </div>
 
           <div class="album">
-          <img src="img/album.png">
+          <img src="img/album.svg">
           <div class="al">
           <input class="album" type="text" v-model="nowPlaying.item.name">
           <div class="clearButton" v-on:click="ClearButton_Click3">×</div>
@@ -57,42 +57,42 @@
         </div>
 
         <div class="ain">
+            <div v-bind:class="web1">
+              <button v-on:click="Web" class="type">
+              <input type="image" v-if="test1 === ''" src="img/web/web_off.svg">
+              <input type="image" v-else src="img/web/web_on.svg"></button>
+              <div class="JAP" v-if="radioValue === '1'">公式サイト</div> <div class="ENG" v-else-if="radioValue === '2'">Office site</div>
+            </div>
             <div v-bind:class="disco1">
               <button v-on:click="Disco" class="type">
-              <input type="image" v-if="test1 === ''" src="img/disco/discography_off.png">
-              <input type="image" v-else src="img/disco/discography_on.png"></button>
-              <div class="JAP" v-if="radioValue === '1'">ディスコグラフィ</div> <div class="ENG" v-else-if="radioValue === '2'">Discography</div>
+              <input type="image" v-if="test2 === ''" src="img/disco/disco_off.svg">
+              <input type="image" v-else  src="img/disco/disco_on.svg"></button>
+              <div class="JAP" v-if="radioValue === '1'">ディスコグラフィー</div> <div class="ENG" v-else-if="radioValue === '2'">Discography</div>
             </div>
-            <div v-bind:class="prod1">
-              <button v-on:click="Prod" class="type">
-              <input type="image" v-if="test2 === ''" src="img/producer/producer_off.png">
-              <input type="image" v-else  src="img/producer/producer_on.png"></button>
-              <div class="JAP" v-if="radioValue === '1'">プロデューサー</div> <div class="ENG" v-else-if="radioValue === '2'">Producer</div>
-            </div>
-            <div v-bind:class="guitar1">
-              <button v-on:click="Guitar" class="type">
-              <input type="image" v-if="test3 === ''" src="img/guitar/guitar_off.png">
-              <input type="image" v-else  src="img/guitar/guitar_on.png"></button>
-              <div class="JAP" v-if="radioValue === '1'">ギター</div> <div class="ENG" v-else-if="radioValue === '2'">Guitar</div>
+            <div v-bind:class="blog1">
+              <button v-on:click="Blog" class="type">
+              <input type="image" v-if="test3 === ''" src="img/blog/blog_off.svg">
+              <input type="image" v-else  src="img/blog/blog_on.svg"></button>
+              <div class="JAP" v-if="radioValue === '1'">ブログ</div> <div class="ENG" v-else-if="radioValue === '2'">Blog</div>
             </div>
            <br><br>
-            <div v-bind:class="bass1">
-              <button v-on:click="Bass" class="type">
-              <input type="image" v-if="test4 === ''" src="img/bass/bass_off.png">
-              <input type="image" v-else  src="img/bass/bass_on.png"></button>
-              <div class="JAP" v-if="radioValue === '1'">ベース</div> <div class="ENG" v-else-if="radioValue === '2'">Bass</div>
+            <div v-bind:class="wiki1">
+              <button v-on:click="Wiki" class="type">
+              <input type="image" v-if="test4 === ''" src="img/wiki/wiki_off.svg">
+              <input type="image" v-else  src="img/wiki/wiki_on.svg"></button>
+              <div class="JAP" v-if="radioValue === '1'">ウィキペディア</div> <div class="ENG" v-else-if="radioValue === '2'">Wikipedia</div>
             </div>
-            <div v-bind:class="key1">
-              <button v-on:click="Key" class="type">
-              <input type="image" v-if="test5 === ''" src="img/keyboard/keyboard_off.png">
-              <input type="image" v-else  src="img/keyboard/keyboard_on.png"></button>
-              <div class="JAP" v-if="radioValue === '1'">キーボード</div> <div class="ENG" v-else-if="radioValue === '2'">Keyboard</div>
+            <div v-bind:class="face1">
+              <button v-on:click="Face" class="type">
+              <input type="image" v-if="test5 === ''" src="img/face/face_off.svg">
+              <input type="image" v-else  src="img/face/face_on.svg"></button>
+              <div class="JAP" v-if="radioValue === '1'">フェイスブック</div> <div class="ENG" v-else-if="radioValue === '2'">Facebook</div>
             </div>
-            <div v-bind:class="drum1">
-              <button v-on:click="Drums" class="type">
-              <input type="image" v-if="test6 === ''" src="img/drums/drums_off.png">
-              <input type="image" v-else  src="img/drums/drum_on.png"></button>
-              <div class="JAP" v-if="radioValue === '1'">ドラム</div> <div class="ENG" v-else-if="radioValue === '2'">Drum</div>
+            <div v-bind:class="twitter1">
+              <button v-on:click="Twitter" class="type">
+              <input type="image" v-if="test6 === ''" src="img/twitter/twitter_off.svg">
+              <input type="image" v-else  src="img/twitter/twitter_on.svg"></button>
+              <div class="JAP" v-if="radioValue === '1'">ツイッター</div> <div class="ENG" v-else-if="radioValue === '2'">Twitter</div>
             </div>
         </div>
           <br>
@@ -103,7 +103,7 @@
           <div class="clearButton" v-on:click="ClearButton_Click4">×</div>
           </div>
           <div class="search">
-          <button type="button" @click="linkToOtherWindow(`http://google.com/search?q=${ nowPlaying.item.artists[0].name + ' ' + nowPlaying.item.name + ' ' + nowPlaying.item.album.name + ' ' + add  }`)" class="search"><input type="image" src="img/search.png"></button>
+          <button type="button" @click="linkToOtherWindow(`http://google.com/search?q=${ nowPlaying.item.artists[0].name + ' ' + nowPlaying.item.name + ' ' + nowPlaying.item.album.name + ' ' + add  }`)" class="search"><input type="image" src="img/search.svg"></button>
           </div>
           </div>
           </div>
@@ -135,18 +135,18 @@ console.log(number);
         selected: '',
         text1: '',
         add: '',
-        count1:'Discography',
-        count2:'Producer',
-        count3:'Guitar',
-        count4:'Bass',
-        count5:'Keyboard',
-        count6:'Drums',
-        count7:'ディスコグラフィー',
-        count8:'プロデューサー',
-        count9:'ギター',
-        count10:'ベース',
-        count11:'キーボード',
-        count12:'ドラム',
+        count1:'Official site',
+        count2:'Discography',
+        count3:'Blog',
+        count4:'Wikipedia',
+        count5:'Facebook',
+        count6:'Twiiter',
+        count7:'公式サイト',
+        count8:'ディスコグラフィー',
+        count9:'ブログ',
+        count10:'ウィキペディア',
+        count11:'フェイスブック',
+        count12:'ツイッター',
         radioValue:'1',
         test1: '',
         test2: '',
@@ -154,12 +154,12 @@ console.log(number);
         test4: '',
         test5: '',
         test6: '',
+        web1: 'web1',
         disco1: 'disco1',
-        prod1: 'prod1',
-        guitar1: 'guitar1',
-        bass1: 'bass1',
-        key1: 'key1',
-        drum1: 'drum1',
+        blog1: 'blog1',
+        wiki1: 'wiki1',
+        face1: 'face1',
+        twitter1: 'twitter1',
       }
     },
 
@@ -188,7 +188,7 @@ console.log(number);
     ClearButton_Click4: function(){
       this.add="";
     },
-    Disco: function (){
+    Web: function (){
     if(this.radioValue == 2)
     {
       this.add = ''
@@ -212,17 +212,17 @@ console.log(number);
       this.test6 = ''
     } if(this.test1 == 'add')
     {
-      this.disco1 = 'disco2'
-      this.prod1 = 'prod1'
-      this.guitar1 = 'guitar1'
-      this.bass1 = 'bass1'
-      this.key1 = 'key1'
-      this.drum1 = 'drum1'
+      this.web1 = 'web2'
+      this.disco1 = 'disco1'
+      this.blog1 = 'blog1'
+      this.wiki1 = 'wiki1'
+      this.face1 = 'face1'
+      this.twitter1 = 'twitter1'
     }
   },
 
 
-    Prod: function (){
+    Disco: function (){
       if(this.radioValue == 2)
       {
         this.add = ''
@@ -246,17 +246,17 @@ console.log(number);
         this.test6 = ''
       } if(this.test2 == 'add')
       {
-        this.disco1 = 'disco1'
-        this.prod1 = 'prod2'
-        this.guitar1 = 'guitar1'
-        this.bass1 = 'bass1'
-        this.key1 = 'key1'
-        this.drum1 = 'drum1'
+        this.web1 = 'web1'
+        this.disco1 = 'disco2'
+        this.blog1 = 'blog1'
+        this.wiki1 = 'wiki1'
+        this.face1 = 'face1'
+        this.twitter1 = 'twitter1'
       }
     },
 
 
-    Guitar: function () {
+    Blog: function () {
       if(this.radioValue == 2)
       {
         this.add = ''
@@ -280,17 +280,17 @@ console.log(number);
         this.test6 = ''
       } if(this.test3 == 'add')
       {
+        this.web1 = 'web1'
         this.disco1 = 'disco1'
-        this.prod1 = 'prod1'
-        this.guitar1 = 'guitar2'
-        this.bass1 = 'bass1'
-        this.key1 = 'key1'
-        this.drum1 = 'drum1'
+        this.blog1 = 'blog2'
+        this.wiki1 = 'wiki1'
+        this.face1 = 'face1'
+        this.twitter1 = 'twitter1'
       }
     },
 
 
-    Bass: function () {
+    Wiki: function () {
       if(this.radioValue == 2)
       {
         this.add = ''
@@ -314,18 +314,18 @@ console.log(number);
         this.test6 = ''
       } if(this.test4 == 'add')
       {
+        this.web1 = 'web1'
         this.disco1 = 'disco1'
-        this.prod1 = 'prod1'
-        this.guitar1 = 'guitar1'
-        this.bass1 = 'bass2'
-        this.key1 = 'key1'
-        this.drum1 = 'drum1'
+        this.blog1 = 'blog1'
+        this.wiki1 = 'wiki2'
+        this.face1 = 'face1'
+        this.twitter1 = 'twitter1'
       }
     },
 
 
 
-    Key: function () {
+    Face: function () {
       if(this.radioValue == 2)
       {
         this.add = ''
@@ -349,18 +349,18 @@ console.log(number);
         this.test6 = ''
       } if(this.test5 == 'add')
       {
+        this.web1 = 'web1'
         this.disco1 = 'disco1'
-        this.prod1 = 'prod1'
-        this.guitar1 = 'guitar1'
-        this.bass1 = 'bass1'
-        this.key1 = 'key2'
-        this.drum1 = 'drum1'
+        this.blog1 = 'blog1'
+        this.wiki1 = 'wiki1'
+        this.face1 = 'face2'
+        this.twitter1 = 'twitter1'
       }
     },
 
 
 
-    Drums: function () {
+    Twitter: function () {
       if(this.radioValue == 2)
       {
         this.add = ''
@@ -384,12 +384,12 @@ console.log(number);
         this.test6 += 'add'
       }if(this.test6 == 'add')
       {
+        this.web1 = 'web1'
         this.disco1 = 'disco1'
-        this.prod1 = 'prod1'
-        this.guitar1 = 'guitar1'
-        this.bass1 = 'bass1'
-        this.key1 = 'key1'
-        this.drum1 = 'drum2'
+        this.blog1 = 'blog1'
+        this.wiki1 = 'wiki1'
+        this.face1 = 'face1'
+        this.twitter1 = 'twitter2'
       }
     },
 
@@ -399,8 +399,8 @@ console.log(number);
         let endpoint = 'https://accounts.spotify.com/authorize'
         let response_type = 'token'
         let client_id = '2a05be441be3404292be9f7d8a2d0d8e'
-        // let redirect_uri = 'http://localhost:8080'
-        let redirect_uri = 'https://discovertest202129.herokuapp.com/'
+        let redirect_uri = 'http://localhost:8080'
+        // let redirect_uri = 'https://discovertest202129.herokuapp.com/'
         let scope = 'user-read-currently-playing'
         location.href = endpoint +
           '?response_type=' + response_type +
